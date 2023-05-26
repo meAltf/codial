@@ -11,6 +11,10 @@ console.log("router is loaded, Congratulations! you have done with setup of expr
 
 
 router.get('/', homeController.home);
+router.use('/users', require('./users'));
+
+//for any other routes, access from here
+//router.use('routerName, require('./routerfile));
 
 
 module.exports = router;
